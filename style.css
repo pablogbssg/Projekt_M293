@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0A183D;
+  color: white;
+}
+
+nav {
+  background-color: #05102B;
+  border-bottom: 4px solid #0FFFC3;
+  padding: 1.5rem 0; /* vergrößerte Höhe */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 1rem 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 0.2rem;
+}
+
+nav a:hover {
+  color: #0FFFC3;
+  border-bottom: 2px solid #0FFFC3;
+}
+
+section {
+  padding: 4rem 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ueber-mich-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.ueber-mich-content img {
+  width: 200px;
+  height: auto;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.projekt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.projekt {
+  background-color: #081B3D;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: transform 0.3s;
+}
+
+.projekt:hover {
+  transform: scale(1.03);
+}
+
+.projekt .media {
+  background-color: #05254C;
+  height: 150px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  background-color: #0FFFC3;
+  border: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  color: #000;
+}
+
+button {
+  background-color: #0FFFC3;
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0dcfaf;
+  transform: scale(1.02);
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #ccc;
+}
